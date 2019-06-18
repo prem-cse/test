@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#03A9F4"
+    tools:context=".OptionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/optionToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/MyToolbar"
+        android:background="#03A9F4">
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/sucesslocicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="152dp"
+        android:elevation="6dp"
+        android:src="@drawable/qty"
+        android:layout_marginHorizontal="150dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/orderll"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dark"
+        android:layout_alignTop="@+id/dark"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/order"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+      >
+
+        <TextView
+            android:layout_width="153dp"
+            android:layout_height="27dp"
+            android:text='Product Name'
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="KG"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Total Cost : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="120"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Done"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@drawable/button3"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="60dp">
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/optionToolbar"
+        android:id="@+id/LinearLayout"
+        >
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:layout_below="@id/optionToolbar">
+       <ImageView
+           android:layout_width="15dp"
+           android:layout_height="11dp"
+           android:src="@drawable/options"
+           android:layout_gravity="center"
+           android:layout_marginHorizontal="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_below="@id/optionToolbar">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/sort"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/optionLL1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_below="@id/optionToolbar">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/filter"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    />
+        
+    </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@id/LinearLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

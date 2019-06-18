@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search"
+        />
+
+    <item
+        android:id="@+id/barcode"
+        android:orderInCategory="100"
+        android:title="Barcode"
+        app:showAsAction="always"
+        android:icon="@drawable/barcode"
+        />
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="Add"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add"
+        />
+    <item
+        android:id="@+id/notification"
+        android:orderInCategory="100"
+        android:title="Notification"
+        app:showAsAction="always"
+        android:icon="@drawable/notification"
+        />
+
+
+</menu>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/transToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/MyToolbar"
+        android:background="#03A9F4"/>
+
+    <ImageView
+        android:id="@+id/sucesslocicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="152dp"
+        android:elevation="6dp"
+        android:src="@drawable/qty"
+        android:layout_marginHorizontal="150dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/orderll"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dark"
+        android:layout_alignTop="@+id/dark"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/order"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:text='Word Power Made Easy'
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="KG"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Total Cost : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="120"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="OK"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@drawable/button3"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="60dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:id="@+id/transll"
+        android:layout_below="@id/transToolbar"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:text="Item name"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:text="Qty"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:text="Amount"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/transListView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@id/transll"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/transExpandfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transListView"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#03A9F4"
+        android:src="@drawable/ic_add"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transListView"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#03A9F4"
+        android:src="@drawable/ic_forward"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transExpandfab"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#0288D1"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Total"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0288D1"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text=": 1200"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/paymentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="2dp"
+        android:theme="@style/MyToolbar"
+        android:background="#03A9F4">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentll"
+        android:layout_below="@id/paymentToolbar"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/sell"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/paymentToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="Sell"
+        android:background="@drawable/button4"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentToolbar"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/sell"
+        android:text="Buy"
+        android:background="@drawable/button5"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pay in Credit   "
+        android:layout_below="@id/paymentll"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        />
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:layout_below="@id/switchButton">
+   </FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Finish"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@drawable/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"/>
+</RelativeLayout>
